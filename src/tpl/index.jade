@@ -1,0 +1,18 @@
+doctype html
+html(lang='#{current_lang}')
+
+	include include/head
+
+	body(class='#{current_lang}').index
+		.page_wrapper
+
+			include include/warning
+
+			header
+				.container
+					h2.stripe Learn the Secret of Successful People
+					
+			//- include include/footer
+			//- include include/floating_labels
+
+		include include/scripts
