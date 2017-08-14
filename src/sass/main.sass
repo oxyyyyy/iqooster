@@ -10,6 +10,8 @@
 // Variables
 $font-stack: 'Roboto', sans-serif
 
+$sm_screen: 767px
+
 // ------------------------------------ General styles ------------------------------------
 *, :before, :after
 	-moz-box-sizing: border-box
@@ -19,6 +21,125 @@ $font-stack: 'Roboto', sans-serif
 body
 	font: 300 18px $font-stack
 	overflow-x: hidden
+	@media (max-width: $sm_screen)
+		font-size: 14px
 
 p
 	margin: 0
+ul
+	list-style: none
+
+// Sections
+header
+	background: url('../img/backgrounds/header_bg.png')
+	background-size: cover
+	padding-bottom: 100px
+	padding-top: 35px
+	p.under_stripe
+		text-transform: uppercase
+		text-align: center
+		color: #89daf5
+		font-size: 26px
+		font-weight: 900
+		margin-bottom: 12px
+		@media (max-width: $sm_screen)
+			font-size: 18px
+	.logo_and_text
+		background-color: #ffffff
+		border-radius: 10px
+		margin-bottom: 15px
+		p.logo
+			padding: 0 25px 0 20px
+			border-radius: 10px
+			color: #ffffff
+			font-size: 72px
+			font-weight: 900
+			font-style: italic
+			background-color: #e50003
+			box-shadow: 3.5px 6.062px 32px 0px rgba(0, 0, 0, 0.25)
+			position: relative
+			@media (max-width: $sm_screen)
+				font-size: 36px
+			&:after
+				content: ''
+				width: 15px
+				height: 25px
+				background-color: #e50003
+				position: absolute
+				right: -7px
+				top: 25px
+				transform: skewX(-30deg)
+		p.text
+			text-transform: uppercase
+			color: #073982
+			font-size: 26px
+			font-weight: 700
+			padding: 10px 25px
+			@media (max-width: $sm_screen)
+				font-size: 12px
+	.bottles_and_medals
+		position: relative
+	.header_medal
+		margin-right: 40px
+		@media (max-width: $sm_screen)
+			margin-right: 10px
+			z-index: 5
+	.header_two_bottles
+		margin-top: 15px
+		margin-left: -130px
+		@media (max-width: $sm_screen)
+			margin-left: 0
+			max-width: 360px
+			z-index: 2
+	.header_verified
+		position: absolute
+		top: 295px
+		left: 250px
+		@media (max-width: $sm_screen)
+			top: 35px
+			left: 320px
+	.header_blue_man_with_brain
+		margin-left: -55px
+		margin-top: -42px
+		@media (max-width: $sm_screen)
+			margin-left: -155px
+	ul.header_list
+		max-width: 360px
+		li
+			color: #ffffff
+			font-weight: 700
+			margin-bottom: 26px
+			position: relative
+			&:before
+				position: absolute
+				left: -35px
+			&:nth-child(1)
+				&:before
+					content: $header_list_icon_1
+					width: 24px
+					height: 27px
+			&:nth-child(2)
+				&:before
+					content: $header_list_icon_2
+					width: 28px
+					height: 17px
+			&:nth-child(3)
+				&:before
+					content: $header_list_icon_3
+					width: 27px
+					height: 24px
+			&:nth-child(4)
+				&:before
+					content: $header_list_icon_4
+					width: 21px
+					height: 34px
+			&:nth-child(5)
+				&:before
+					content: $header_list_icon_5
+					width: 26px
+					height: 23px
+			&:nth-child(6)
+				&:before
+					content: $header_list_icon_6
+					width: 25px
+					height: 25px

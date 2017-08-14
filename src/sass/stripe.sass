@@ -1,2 +1,28 @@
+@import 'base64'
+
 .stripe
+	text-transform: uppercase
+	text-align: center
 	font-size: 24px
+	font-weight: 900
+	font-style: italic
+	letter-spacing: 1.2px
+	color: #ffffff
+	margin: 0 38px 27px 38px
+	background-color: #e50003
+	display: inline-block
+	padding: 8px 36px
+	position: relative
+	@media (max-width: 767px)
+		font-size: 18px
+	&:before, &:after
+		width: 46px
+		height: 42px
+		position: absolute
+		bottom: -10px
+	&:before
+		content: $stripe_flag_left_big
+		left: -34px
+	&:after
+		content: $stripe_flag_right_big
+		right: -34px
