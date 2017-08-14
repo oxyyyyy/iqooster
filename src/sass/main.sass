@@ -6,11 +6,13 @@
 @import 'floating_labels'
 @import 'warning'
 @import 'stripe'
+@import 'trigger'
+@import 'button'
 
 // Variables
 $font-stack: 'Roboto', sans-serif
 
-$sm_screen: 767px
+$sm_screen: 991px
 
 // ------------------------------------ General styles ------------------------------------
 *, :before, :after
@@ -23,17 +25,25 @@ body
 	overflow-x: hidden
 	@media (max-width: $sm_screen)
 		font-size: 14px
+.page_wrapper
+	overflow-x: hidden
 
 p
 	margin: 0
 ul
 	list-style: none
+.bold
+	font-weight: 700
+.black
+	font-weight: 900
+.italic
+	font-style: italic
 
 // Sections
 header
 	background: url('../img/backgrounds/header_bg.png')
 	background-size: cover
-	padding-bottom: 100px
+	padding-bottom: 15px
 	padding-top: 35px
 	p.under_stripe
 		text-transform: uppercase
@@ -79,6 +89,7 @@ header
 				font-size: 12px
 	.bottles_and_medals
 		position: relative
+		z-index: 5
 	.header_medal
 		margin-right: 40px
 		@media (max-width: $sm_screen)
@@ -105,6 +116,7 @@ header
 			margin-left: -155px
 	ul.header_list
 		max-width: 360px
+		z-index: 5
 		li
 			color: #ffffff
 			font-weight: 700
@@ -143,3 +155,15 @@ header
 					content: $header_list_icon_6
 					width: 25px
 					height: 25px
+	.trigger_simple
+		margin-top: -33px
+		@media (max-width: $sm_screen)
+			margin-top: 0
+	.header_tv_labels_container
+		margin-top: 30px
+		@media (max-width: $sm_screen)
+			margin-top: 95px
+		.header_tv_label
+			margin: 0 15px 10px 15px
+			@media (max-width: $sm_screen)
+				max-width: 58px

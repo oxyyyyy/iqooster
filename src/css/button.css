@@ -1,0 +1,16 @@
+.btn {
+  text-transform: uppercase;
+  color: #052b62;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 18px 62px;
+  border-radius: 37px;
+  background: linear-gradient(0deg, #fec241 0%, #fef08d 67%, #fee67d 100%);
+  box-shadow: 5.248px 6.038px 18px 0px rgba(0, 0, 0, 0.35);
+  transition: none; }
+  @media (max-width: 1199px) {
+    .btn {
+      padding: 15px 25px; } }
+  .btn:hover {
+    background: linear-gradient(0deg, #feaf05 0%, #fee84c 67%, #fedc46 100%);
+    color: inherit; }

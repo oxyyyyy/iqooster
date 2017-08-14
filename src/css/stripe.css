@@ -11,7 +11,7 @@
   display: inline-block;
   padding: 8px 36px;
   position: relative; }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .stripe {
       font-size: 18px; } }
   .stripe:before, .stripe:after {
