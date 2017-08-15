@@ -12,7 +12,9 @@
 // Variables
 $font-stack: 'Roboto', sans-serif
 
+$xs_screen: 767px
 $sm_screen: 991px
+$md_screen: 1199px
 
 // ------------------------------------ General styles ------------------------------------
 *, :before, :after
@@ -27,6 +29,10 @@ body
 		font-size: 14px
 .page_wrapper
 	overflow-x: hidden
+section, header
+	background-size: cover !important
+section
+	padding-top: 55px
 
 p
 	margin: 0
@@ -38,11 +44,12 @@ ul
 	font-weight: 900
 .italic
 	font-style: italic
+.blue
+	color: #073982
 
 // Sections
 header
 	background: url('../img/backgrounds/header_bg.png')
-	background-size: cover
 	padding-bottom: 15px
 	padding-top: 35px
 	p.under_stripe
@@ -167,3 +174,230 @@ header
 			margin: 0 15px 10px 15px
 			@media (max-width: $sm_screen)
 				max-width: 58px
+
+section.bullets
+	background: url('../img/backgrounds/bullets_bg.png')
+	h2.stripe
+		margin-bottom: 60px
+	p.default
+		margin-bottom: 46px
+	.bullets_bullets
+		height: 440px
+		.bullets_bullet
+			max-width: 550px
+			padding: 40px 100px
+			&:before
+				content: $brain_and_cog_icon
+				width: 43px
+				height: 43px
+				position: absolute
+			&:nth-child(1)
+				background: $bullets_paral_1
+				width: 549px
+				height: 165px
+				position: relative
+				z-index: 10
+				padding: 50px 85px 30px 114px
+				&:before
+					left: 31px
+					top: 56px
+				@media (max-width: $xs_screen)
+					background: $bullets_paral_1_small
+					width: 318px
+					height: 165px
+					padding: 45px 45px 30px 85px
+			&:nth-child(2)
+				background: $bullets_paral_2
+				width: 543px
+				height: 188px
+				position: relative
+				z-index: 5
+				top: -54px
+				left: 41px
+				padding: 58px 95px 50px 72px
+				&:before
+					right: 29px
+					top: 76px
+				@media (max-width: $xs_screen)
+					background: $bullets_paral_2_small
+					width: 312px
+					height: 188px
+					left: 20px
+					padding: 54px 75px 50px 32px
+			&:nth-child(3)
+				background: $bullets_paral_3
+				width: 549px
+				height: 162px
+				position: relative
+				top: -110px
+				z-index: 10
+				padding: 41px 70px 40px 113px
+				&:before
+					left: 31px
+					top: 57px
+				@media (max-width: $xs_screen)
+					background: $bullets_paral_3_small
+					width: 318px
+					height: 162px
+					padding: 40px 30px 40px 86px
+	.man_with_brain
+		width: 517px
+		height: 471px
+		position: relative
+		top: -37px
+		right: -60px
+		@media (max-width: $md_screen)
+			top: -37px
+			right: 30px
+		@media (max-width: $sm_screen)
+			position: static
+			width: 70%
+			height: 100%
+	.bullets_bottom_text
+		text-align: center
+		background-color: #fee94e
+		border-radius: 30px 30px 0 0
+		padding: 25px 80px
+		margin: 0 20px
+		margin-top: -55px
+		z-index: 5
+		position: relative
+		@media (max-width: $xs_screen)
+			padding: 15px 10px
+			margin-top: 20px
+		&:before, &:after
+			content: ''
+			width: 20px
+			height: 23px
+			position: absolute
+			bottom: 0
+			border-style: solid
+		&:before
+			left: -20px
+			border-width: 0px 20px 23px 0
+			border-color: transparent #ce9124 transparent transparent
+		&:after
+			right: -20px
+			border-width: 0px 0px 23px 20px
+			border-color: transparent transparent transparent #ce9124
+		p.first_p
+			margin-bottom: 20px
+		p.second_p
+			font-size: 24px
+			text-transform: uppercase
+			@media (max-width: $sm_screen)
+				font-size: 18px
+
+section.benefits
+	background: url('../img/backgrounds/benefits_bg.png')
+	color: #ffffff
+	h2.stripe
+		margin-bottom: 30px
+	.benefits_bullets_container
+		background: url('../img/dashed_circe_and_lines.png')
+		background-repeat: no-repeat
+		background-position: center
+		width: 930px
+		height: 450px
+		margin: auto
+		position: relative
+		&:before
+			content: url('../img/brain.png')
+			width: 410px
+			height: 340px
+			position: absolute
+			left: 259px
+			top: 55px
+		p.benefits_bullet
+			display: inline-block
+			color: #ffffff
+			max-width: 225px
+			position: absolute
+			&:nth-child(1), &:nth-child(6), &:nth-child(7), &:nth-child(8)
+				text-align: right
+			&:nth-child(1)
+				left: 206px
+				top: 7px
+				&:after
+					content: $benefits_bullet_icon_1
+					width: 37px
+					height: 45px
+					position: absolute
+					top: -4px
+					right: -70px
+			&:nth-child(2)
+				left: 714px
+				top: 62px
+				&:after
+					content: $benefits_bullet_icon_2
+					width: 39px
+					height: 39px
+					position: absolute
+					top: -48px
+					left: 5px
+			&:nth-child(3)
+				left: 687px
+				top: 204px
+				&:after
+					content: $benefits_bullet_icon_3
+					width: 29px
+					height: 34px
+					position: absolute
+					top: -40px
+					left: 0px
+			&:nth-child(4)
+				left: 740px
+				top: 352px
+				&:after
+					content: $benefits_bullet_icon_4
+					width: 45px
+					height: 39px
+					position: absolute
+					top: -50px
+					left: 0
+			&:nth-child(5)
+				left: 495px
+				top: 400px
+				&:after
+					content: $benefits_bullet_icon_5
+					width: 50px
+					height: 30px
+					position: absolute
+					left: -80px
+					bottom: 10px
+			&:nth-child(6)
+				left: -12px
+				top: 377px
+				&:after
+					content: $benefits_bullet_icon_6
+					width: 30px
+					height: 43px
+					position: absolute
+					top: -52px
+					right: 8px
+			&:nth-child(7)
+				left: 22px
+				top: 232px
+				&:after
+					content: $benefits_bullet_icon_7
+					width: 33px
+					height: 45px
+					position: absolute
+					top: -55px
+					right: 0
+			&:nth-child(8)
+				left: -38px
+				top: 80px
+				&:after
+					content: $benefits_bullet_icon_8
+					width: 38px
+					height: 38px
+					position: absolute
+					top: -48px
+					right: 0
+	p.bold
+		margin-top: 63px
+		margin-bottom: 17px
+	p.default
+		font-size: 30px
+		margin-bottom: 50px
