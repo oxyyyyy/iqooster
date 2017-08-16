@@ -698,3 +698,19 @@ section.why {
   section.why .why_trigger_container {
     background-color: #03265e;
     padding: 60px 0 50px 0; }
+
+section.doctor {
+  background: url("../img/backgrounds/doctor_bg.png");
+  padding-bottom: 70px; }
+  section.doctor h2.stripe {
+    margin-bottom: 60px; }
+  section.doctor .doctor_text {
+    max-width: 560px; }
+    section.doctor .doctor_text p {
+      margin-bottom: 23px; }
+    section.doctor .doctor_text p.blue {
+      font-size: 30px; }
+  section.doctor .doctor_medals {
+    margin-left: 50px; }
+    section.doctor .doctor_medals .doctor_medal {
+      margin-bottom: 14px; }

@@ -145,10 +145,14 @@ gulp.task('build', ['clean', 'scripts', 'minCss', 'minCssLibs'], function () {
 		.pipe(gulp.dest('dist/css'));
 
 	var buildJs = gulp.src([
-		'src/js/common.js',
-		'src/js/bundle.libs.min.js'
+		'src/js/common.js'
 	])
 		.pipe(gulp.dest('dist/js'));
+
+	// var buildImg = gulp.src([
+	// 	'src/img/**/*'
+	// ])
+	// 	.pipe(gulp.dest('dist/img'));
 
 	// var buildFonts = gulp.src([
 	//     'src/fonts/**/*.*'
@@ -156,8 +160,7 @@ gulp.task('build', ['clean', 'scripts', 'minCss', 'minCssLibs'], function () {
 	//   .pipe(gulp.dest('dist/fonts'));
 
 	var buildHtmlPhp = gulp.src([
-		'src/*.html',
-		'src/*.php'
+		'src/*.html'
 	])
 		.pipe(gulp.dest('dist/'));
 
