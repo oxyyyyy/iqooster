@@ -635,3 +635,66 @@ section.course {
         padding: 35px 25px 60px 105px;
         max-width: 416px;
         margin: 25px auto 0 auto; } }
+
+section.why {
+  background: url("../img/backgrounds/why_bg.png"); }
+  section.why h2.stripe {
+    margin-bottom: 60px; }
+  section.why .why_texts_container {
+    position: relative; }
+    section.why .why_texts_container:before {
+      content: url("../img/colorful_brain.png");
+      position: absolute;
+      left: 404px;
+      top: 28px; }
+      @media (max-width: 1199px) {
+        section.why .why_texts_container:before {
+          left: 314px; } }
+      @media (max-width: 991px) {
+        section.why .why_texts_container:before {
+          left: 0;
+          right: 0;
+          top: 200px;
+          transform: rotate(90deg) scale(0.5); } }
+      @media (max-width: 767px) {
+        section.why .why_texts_container:before {
+          top: 160px; } }
+    section.why .why_texts_container .why_left_text, section.why .why_texts_container .why_right_text {
+      max-width: 365px;
+      text-align: justify; }
+    section.why .why_texts_container .why_right_text {
+      font-style: italic;
+      font-size: 24px;
+      background: url("../img/icons/sections/why/paper_and_clip_large.png") no-repeat;
+      background-size: cover;
+      width: 626px;
+      max-width: none;
+      margin: -33px -20px 0px 0px;
+      padding: 70px 103px 61px 166px; }
+      @media (max-width: 1199px) {
+        section.why .why_texts_container .why_right_text {
+          background: url("../img/icons/sections/why/paper_and_clip_medium.png") no-repeat;
+          width: 537px;
+          padding: 70px 43px 57px 145px; } }
+      @media (max-width: 991px) {
+        section.why .why_texts_container .why_right_text {
+          padding: 57px;
+          padding-top: 100px; } }
+      @media (max-width: 767px) {
+        section.why .why_texts_container .why_right_text {
+          background: url("../img/icons/sections/why/paper_and_clip_small.png") no-repeat;
+          width: 312px;
+          padding: 30px;
+          padding-top: 55px;
+          padding-bottom: 95px;
+          font-size: 18px;
+          margin-bottom: 40px; } }
+    @media (max-width: 1199px) {
+      section.why .why_texts_container .why_left_text {
+        max-width: 300px; } }
+    @media (max-width: 991px) {
+      section.why .why_texts_container .why_left_text {
+        margin-bottom: 56px; } }
+  section.why .why_trigger_container {
+    background-color: #03265e;
+    padding: 60px 0 50px 0; }
