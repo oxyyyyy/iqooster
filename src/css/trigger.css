@@ -33,3 +33,71 @@
       font-style: italic;
       color: #fee94e;
       transform: skewX(10deg); }
+
+.trigger_section {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #e7f8fd 20%, #89daf5 100%);
+  height: 50px;
+  border-radius: 0 50px 50px 0; }
+  @media (max-width: 991px) {
+    .trigger_section {
+      background: none;
+      height: auto;
+      padding: 7px 0;
+      border-radius: 0; } }
+  .trigger_section .three_bottles {
+    margin-left: 54px; }
+    @media (max-width: 991px) {
+      .trigger_section .three_bottles {
+        display: none; } }
+  .trigger_section .title_and_label_container {
+    margin-top: -40px;
+    margin-left: -42px; }
+    @media (max-width: 1199px) {
+      .trigger_section .title_and_label_container {
+        margin-top: -44px; } }
+    @media (max-width: 991px) {
+      .trigger_section .title_and_label_container {
+        margin: 0; } }
+    .trigger_section .title_and_label_container .trigger_title {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 900;
+      color: #e50003;
+      letter-spacing: 2px;
+      text-align: center; }
+      @media (max-width: 1199px) {
+        .trigger_section .title_and_label_container .trigger_title {
+          font-size: 24px; } }
+      @media (max-width: 991px) {
+        .trigger_section .title_and_label_container .trigger_title {
+          background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #e7f8fd 20%, #89daf5 100%);
+          margin-left: 0;
+          margin-bottom: 16px;
+          letter-spacing: normal;
+          padding: 10px 30px; } }
+    .trigger_section .title_and_label_container .label_overlay {
+      background-color: #e50003;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transform: skewX(-10deg); }
+      @media (max-width: 1199px) {
+        .trigger_section .title_and_label_container .label_overlay {
+          margin-bottom: 12px; } }
+      @media (max-width: 991px) {
+        .trigger_section .title_and_label_container .label_overlay {
+          margin-bottom: 8px; } }
+      .trigger_section .title_and_label_container .label_overlay .label {
+        font-size: 16px;
+        font-weight: 700;
+        font-style: italic;
+        color: #fee94e;
+        transform: skewX(10deg);
+        letter-spacing: 5px;
+        text-align: center; }
+        @media (max-width: 1199px) {
+          .trigger_section .title_and_label_container .label_overlay .label {
+            letter-spacing: 3px; } }
+        @media (max-width: 991px) {
+          .trigger_section .title_and_label_container .label_overlay .label {
+            letter-spacing: 1.3px; } }

@@ -28,9 +28,10 @@ body
 	@media (max-width: $sm_screen)
 		font-size: 14px
 .page_wrapper
-	overflow-x: hidden
+	overflow: hidden
 section, header
 	background-size: cover !important
+	background-position: center !important
 section
 	padding-top: 55px
 
@@ -290,6 +291,7 @@ section.bullets
 
 section.benefits
 	background: url('../img/backgrounds/benefits_bg.png')
+	padding-bottom: 50px
 	color: #ffffff
 	h2.stripe
 		margin-bottom: 30px
@@ -400,4 +402,55 @@ section.benefits
 		margin-bottom: 17px
 	p.default
 		font-size: 30px
+		margin-bottom: 93px
+
+section.course
+	background-color: #e5eaf3
+	padding-bottom: 10px
+	h2.stripe
 		margin-bottom: 50px
+	.course_steps_container
+		.course_steps_step
+			position: relative
+			text-align: center
+			width: 200px
+			&:before
+				content: ''
+				width: 110px
+				height: 110px
+				background-color: transparent
+				border-radius: 50%
+				left: 45px
+				top: 5px
+				position: absolute
+				border: 1px solid #ffffff
+			&:after
+				content: $course_steps_separator
+				width: 76px
+				height: 15px
+				position: absolute
+				left: 215px
+				top: 45px
+				@media (max-width: $md_screen)
+					left: 183px
+				@media (max-width: $sm_screen)
+					content: none
+			&:last-child
+				&:after
+					content: none
+			.course_steps_step_img
+				width: 120px
+				margin-bottom: 15px
+				box-shadow: 3.812px 5.871px 8px 0px rgba(0, 0, 0, 0.25)
+	p.papper_text
+		background: url('../img/icons/sections/course/papper_large.png') no-repeat
+		margin-top: 25px
+		padding: 38px 65px 60px 105px
+		@media (max-width: $sm_screen)
+			background: url('../img/icons/sections/course/papper_medium.png') no-repeat
+			padding: 40px 40px 73px 105px
+		@media (max-width: $xs_screen)
+			background: url(../img/icons/sections/course/papper_small.png) no-repeat
+			padding: 35px 25px 60px 105px
+			max-width: 416px
+			margin: 25px auto 0 auto

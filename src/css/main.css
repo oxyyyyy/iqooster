@@ -92,6 +92,74 @@
       color: #fee94e;
       transform: skewX(10deg); }
 
+.trigger_section {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #e7f8fd 20%, #89daf5 100%);
+  height: 50px;
+  border-radius: 0 50px 50px 0; }
+  @media (max-width: 991px) {
+    .trigger_section {
+      background: none;
+      height: auto;
+      padding: 7px 0;
+      border-radius: 0; } }
+  .trigger_section .three_bottles {
+    margin-left: 54px; }
+    @media (max-width: 991px) {
+      .trigger_section .three_bottles {
+        display: none; } }
+  .trigger_section .title_and_label_container {
+    margin-top: -40px;
+    margin-left: -42px; }
+    @media (max-width: 1199px) {
+      .trigger_section .title_and_label_container {
+        margin-top: -44px; } }
+    @media (max-width: 991px) {
+      .trigger_section .title_and_label_container {
+        margin: 0; } }
+    .trigger_section .title_and_label_container .trigger_title {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 900;
+      color: #e50003;
+      letter-spacing: 2px;
+      text-align: center; }
+      @media (max-width: 1199px) {
+        .trigger_section .title_and_label_container .trigger_title {
+          font-size: 24px; } }
+      @media (max-width: 991px) {
+        .trigger_section .title_and_label_container .trigger_title {
+          background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #e7f8fd 20%, #89daf5 100%);
+          margin-left: 0;
+          margin-bottom: 16px;
+          letter-spacing: normal;
+          padding: 10px 30px; } }
+    .trigger_section .title_and_label_container .label_overlay {
+      background-color: #e50003;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transform: skewX(-10deg); }
+      @media (max-width: 1199px) {
+        .trigger_section .title_and_label_container .label_overlay {
+          margin-bottom: 12px; } }
+      @media (max-width: 991px) {
+        .trigger_section .title_and_label_container .label_overlay {
+          margin-bottom: 8px; } }
+      .trigger_section .title_and_label_container .label_overlay .label {
+        font-size: 16px;
+        font-weight: 700;
+        font-style: italic;
+        color: #fee94e;
+        transform: skewX(10deg);
+        letter-spacing: 5px;
+        text-align: center; }
+        @media (max-width: 1199px) {
+          .trigger_section .title_and_label_container .label_overlay .label {
+            letter-spacing: 3px; } }
+        @media (max-width: 991px) {
+          .trigger_section .title_and_label_container .label_overlay .label {
+            letter-spacing: 1.3px; } }
+
 .btn {
   text-transform: uppercase;
   color: #052b62;
@@ -107,7 +175,7 @@
       padding: 15px 25px; } }
   .btn:hover {
     background: linear-gradient(0deg, #feaf05 0%, #fee84c 67%, #fedc46 100%);
-    color: inherit; }
+    color: #052b62; }
 
 *, :before, :after {
   -moz-box-sizing: border-box;
@@ -122,10 +190,11 @@ body {
       font-size: 14px; } }
 
 .page_wrapper {
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 section, header {
-  background-size: cover !important; }
+  background-size: cover !important;
+  background-position: center !important; }
 
 section {
   padding-top: 55px; }
@@ -401,6 +470,7 @@ section.bullets {
 
 section.benefits {
   background: url("../img/backgrounds/benefits_bg.png");
+  padding-bottom: 50px;
   color: #ffffff; }
   section.benefits h2.stripe {
     margin-bottom: 30px; }
@@ -511,4 +581,57 @@ section.benefits {
     margin-bottom: 17px; }
   section.benefits p.default {
     font-size: 30px;
+    margin-bottom: 93px; }
+
+section.course {
+  background-color: #e5eaf3;
+  padding-bottom: 10px; }
+  section.course h2.stripe {
     margin-bottom: 50px; }
+  section.course .course_steps_container .course_steps_step {
+    position: relative;
+    text-align: center;
+    width: 200px; }
+    section.course .course_steps_container .course_steps_step:before {
+      content: '';
+      width: 110px;
+      height: 110px;
+      background-color: transparent;
+      border-radius: 50%;
+      left: 45px;
+      top: 5px;
+      position: absolute;
+      border: 1px solid #ffffff; }
+    section.course .course_steps_container .course_steps_step:after {
+      content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAPCAYAAABOWynpAAABkUlEQVRYhc2YQUrDUBCGv9R000KxKyHYhSC4qXUtFrrwDN260VN4AC8hbtzqFQQL9QBqb6AU3FSptJtW4uKN5jVN8ja+jD8MGV7+SWYek5l5CeI4pkxsHl9kLQdAW2QbqAMz4BUYiaw4+nF37tXPPIQqb11FE+gDUWq9DuyJHAI3wHu5rq2jovz+JnDG+malEQmv6d0jBzQzLMBkVt3ypQt0gAYwBZ6AIbAUXh+4JPV5lgnNDGuTZFYVOAF6mCzakGtP1qvCi8RODZobdmDpXaCVw2sBRzl2pSPM6Vp/hoJuZtetfcdjOsC96Ft5JN+xgG6G1Sy94eDa92u5rBIQ4reABgX35iTBTynugJ8pOxe8xVTBBOVLijC29GcH99HS3xxcPMTxK6HWxIzZhF3Rh8AO2YX/BXhI2WWijFg0a9iIJMsWwDUwwEzzX3IdyPpCeGOxU4Pm4BoDt8ApZihdYjrhfQ5/Jny1oRX0j0YT4IrVepaFsfAm3j1y4D8cvieY487P34oI0z3nJJ/g2t8KLXwD+4BNm4Ug17kAAAAASUVORK5CYII=");
+      width: 76px;
+      height: 15px;
+      position: absolute;
+      left: 215px;
+      top: 45px; }
+      @media (max-width: 1199px) {
+        section.course .course_steps_container .course_steps_step:after {
+          left: 183px; } }
+      @media (max-width: 991px) {
+        section.course .course_steps_container .course_steps_step:after {
+          content: none; } }
+    section.course .course_steps_container .course_steps_step:last-child:after {
+      content: none; }
+    section.course .course_steps_container .course_steps_step .course_steps_step_img {
+      width: 120px;
+      margin-bottom: 15px;
+      box-shadow: 3.812px 5.871px 8px 0px rgba(0, 0, 0, 0.25); }
+  section.course p.papper_text {
+    background: url("../img/icons/sections/course/papper_large.png") no-repeat;
+    margin-top: 25px;
+    padding: 38px 65px 60px 105px; }
+    @media (max-width: 991px) {
+      section.course p.papper_text {
+        background: url("../img/icons/sections/course/papper_medium.png") no-repeat;
+        padding: 40px 40px 73px 105px; } }
+    @media (max-width: 767px) {
+      section.course p.papper_text {
+        background: url(../img/icons/sections/course/papper_small.png) no-repeat;
+        padding: 35px 25px 60px 105px;
+        max-width: 416px;
+        margin: 25px auto 0 auto; } }
