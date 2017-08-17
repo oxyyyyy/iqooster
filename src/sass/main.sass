@@ -605,11 +605,15 @@ section.consist
 			top: -70px
 	.consist_bullets_bullet
 		max-width: 360px
+		@media (max-width: $md_screen)
+			max-width: 300px
 		.consist_bullets_bullet_title_and_icon
 			margin-right: -80px
 			height: 34px
 			width: 550px
 			padding-right: 110px
+			@media (max-width: $md_screen)
+				width: 430px
 			h3.consist_bullets_bullet_title
 				font-size: 18px
 				text-transform: uppercase
@@ -626,12 +630,16 @@ section.consist
 			margin: 14px 17px 18px 0
 	.consist_bullets_right
 		margin-right: 191px
+		@media (max-width: $md_screen)
+			margin-right: 130px
 		.consist_bullets_bullet
 			text-align: right
 			.consist_bullets_bullet_title_and_icon
 				background: linear-gradient(to right, rgba(254,233,78,0) 0%, rgba(254,233,78,1) 20%, rgba(254,233,78,1) 100%)
 	.consist_bullets_left
 		margin-left: 191px
+		@media (max-width: $md_screen)
+			margin-left: 130px
 		.consist_bullets_bullet
 			text-align: left
 			.consist_bullets_bullet_title_and_icon
@@ -640,6 +648,8 @@ section.consist
 				padding-left: 110px
 				margin-left: -192px
 				background: linear-gradient(to left, rgba(254,233,78,0) 0%, rgba(254,233,78,1) 20%, rgba(254,233,78,1) 100%)
+				@media (max-width: $md_screen)
+					margin-left: -130px
 				.consist_bullets_bullet_icon
 					margin: 0
 					margin-right: 32px
@@ -670,3 +680,27 @@ section.consist
 		font-size: 30px
 		margin-top: 15px
 		margin-bottom: 50px
+
+section.stories
+	background-color: #e5eaf3
+	padding-bottom: 50px
+	h2.stripe
+		margin-bottom: 45px
+	.stories_videos_container
+		border: 2px dashed #85d4ee
+		border-radius: 35px
+		padding: 0 15px
+		position: relative
+		@media (max-width: $sm_screen)
+			border: none
+		&:after
+			content: $tv_antenna
+			width: 71px
+			height: 36px
+			position: absolute
+			top: -36px
+			right: 100px
+			@media (max-width: $sm_screen)
+				content: none
+		iframe
+			margin: 25px 0 17px 0
