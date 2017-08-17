@@ -701,16 +701,90 @@ section.why {
 
 section.doctor {
   background: url("../img/backgrounds/doctor_bg.png");
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  position: relative; }
+  section.doctor:before {
+    content: url("../img/microscope_and_flask.svg");
+    width: 410px;
+    position: absolute;
+    left: -130px;
+    top: 190px;
+    transform: rotate(10deg);
+    opacity: 0.3; }
+    @media (max-width: 991px) {
+      section.doctor:before {
+        left: -250px; } }
+  section.doctor:after {
+    content: url("../img/tube_and_magnifier.svg");
+    width: 315px;
+    position: absolute;
+    right: -85px;
+    top: 210px;
+    transform: rotate(1deg);
+    opacity: 0.3; }
+    @media (max-width: 991px) {
+      section.doctor:after {
+        right: -200px; } }
   section.doctor h2.stripe {
     margin-bottom: 60px; }
   section.doctor .doctor_text {
-    max-width: 560px; }
+    max-width: 560px;
+    text-align: justify;
+    position: relative;
+    z-index: 5; }
+    @media (max-width: 1199px) {
+      section.doctor .doctor_text {
+        margin-right: 30px; } }
+    @media (max-width: 991px) {
+      section.doctor .doctor_text {
+        margin: 0;
+        max-width: 100%; } }
+    section.doctor .doctor_text:before {
+      content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAARCAYAAADZsVyDAAABkUlEQVQ4jY3UO2tVQRSG4ScnEoMoIpqYoEgkiL3+A1OkEMHCwhQhiIggCBFDiCCEFAELQVEEL41o5wVBGyEWdgFLQbBQSCFe0CKIiIVRi5nNWW7P7ONq9vpmf/MyM2vW9Gw+sKgQp3At51+wB6slMx7hcM6ftgqmnbgQ9EIX6JEA/YmZEvg6NuX8ddal2IKrQd/Cq07gCRwMejavohQXMZTzr5iHOngrLgf9DE8aoGM4FvQiPncCX8JgztdwtgG6ATfQk/UKrlQ/I3gck0HfxssG8AJGg57Djzp4o78L9A3nG6D7cSboZdyLhgo8j5Ew3ocZabv16MXN/K1iBMfr4FFM1yb3Sef72L91mMK+2tiwdM3ORfA01nVYGanqR2tjswUvaec7KvChBiPtjiK19d4G73q5B1ral7sUwyEf6OKF7RX4bRfju5Cv/Af4QwW+08V4P+TvsdTg/S53akvqtucF413pOYxxEh87eH/jND5Bb//usTXpcv/CLqkAb6Rncy5PiLGKB9imff4vcAIPK9MfuxtEZkjbi8IAAAAASUVORK5CYII=");
+      width: 22px;
+      height: 17px;
+      position: absolute;
+      top: -35px; }
+      @media (max-width: 991px) {
+        section.doctor .doctor_text:before {
+          content: none; } }
     section.doctor .doctor_text p {
       margin-bottom: 23px; }
     section.doctor .doctor_text p.blue {
       font-size: 30px; }
   section.doctor .doctor_medals {
-    margin-left: 50px; }
+    margin-left: 50px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 7; }
+    @media (max-width: 1199px) {
+      section.doctor .doctor_medals {
+        position: absolute; } }
+    @media (max-width: 991px) {
+      section.doctor .doctor_medals {
+        position: static;
+        margin: 0;
+        width: 100%; } }
     section.doctor .doctor_medals .doctor_medal {
       margin-bottom: 14px; }
+      @media (max-width: 991px) {
+        section.doctor .doctor_medals .doctor_medal {
+          margin-bottom: 0; } }
+  section.doctor .doctor_photo_and_text {
+    position: relative;
+    z-index: 5;
+    margin-top: -40px; }
+    @media (max-width: 991px) {
+      section.doctor .doctor_photo_and_text {
+        margin-top: 0; } }
+    @media (max-width: 991px) {
+      section.doctor .doctor_photo_and_text .doctor_photo {
+        width: 100%; } }
+    section.doctor .doctor_photo_and_text .doctor_name {
+      margin-top: -30px;
+      margin-left: 70px; }
+      @media (max-width: 991px) {
+        section.doctor .doctor_photo_and_text .doctor_name {
+          margin-left: 20px; } }
+      section.doctor .doctor_photo_and_text .doctor_name p.bold {
+        font-size: 24px; }

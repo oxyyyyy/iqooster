@@ -514,15 +514,79 @@ section.why
 section.doctor
 	background: url('../img/backgrounds/doctor_bg.png')
 	padding-bottom: 70px
+	position: relative
+	&:before
+		content: url('../img/microscope_and_flask.svg')
+		width: 410px
+		position: absolute
+		left: -130px
+		top: 190px
+		transform: rotate(10deg)
+		opacity: 0.3
+		@media (max-width: $sm_screen)
+			left: -250px
+	&:after
+		content: url('../img/tube_and_magnifier.svg')
+		width: 315px
+		position: absolute
+		right: -85px
+		top: 210px
+		transform: rotate(1deg)
+		opacity: 0.3
+		@media (max-width: $sm_screen)
+			right: -200px
 	h2.stripe
 		margin-bottom: 60px
 	.doctor_text
 		max-width: 560px
+		text-align: justify
+		position: relative
+		z-index: 5
+		@media (max-width: $md_screen)
+			margin-right: 30px
+		@media (max-width: $sm_screen)
+			margin: 0
+			max-width: 100%
+		&:before
+			content: $open_quote
+			width: 22px
+			height: 17px
+			position: absolute
+			top: -35px
+			@media (max-width: $sm_screen)
+				content: none
 		p
 			margin-bottom: 23px
 		p.blue
 			font-size: 30px
 	.doctor_medals
 		margin-left: 50px
+		margin-top: -60px
+		position: relative
+		z-index: 7
+		@media (max-width: $md_screen)
+			position: absolute
+		@media (max-width: $sm_screen)
+			position: static
+			margin: 0
+			width: 100%
 		.doctor_medal
 			margin-bottom: 14px
+			@media (max-width: $sm_screen)
+				margin-bottom: 0
+	.doctor_photo_and_text
+		position: relative
+		z-index: 5
+		margin-top: -40px
+		@media (max-width: $sm_screen)
+			margin-top: 0
+		.doctor_photo
+			@media (max-width: $sm_screen)
+				width: 100%
+		.doctor_name
+			margin-top: -30px
+			margin-left: 70px
+			@media (max-width: $sm_screen)
+				margin-left: 20px
+			p.bold
+				font-size: 24px
