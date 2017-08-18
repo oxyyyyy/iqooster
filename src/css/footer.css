@@ -1,0 +1,54 @@
+footer {
+  color: #7c7c7c;
+  background-color: #1c1c1c;
+  padding-top: 9px;
+  padding-bottom: 100px; }
+  footer .logo_and_text {
+    background-color: transparent;
+    margin-bottom: 5px; }
+    footer .logo_and_text p.logo {
+      font-size: 44px;
+      height: 50px; }
+      footer .logo_and_text p.logo:after {
+        right: -2px;
+        top: 16px; }
+    footer .logo_and_text p.text {
+      color: #ffffff;
+      font-size: 18px; }
+      @media (max-width: 767px) {
+        footer .logo_and_text p.text {
+          font-size: 14px; } }
+  footer .footer_links {
+    margin-bottom: 5px; }
+    @media (max-width: 767px) {
+      footer .footer_links {
+        width: 100%; } }
+    footer .footer_links a.footer_link {
+      color: #87d7f1;
+      font-size: 12px;
+      text-decoration: underline;
+      margin-right: 40px; }
+      @media (max-width: 767px) {
+        footer .footer_links a.footer_link {
+          margin: 0; } }
+      footer .footer_links a.footer_link:last-child {
+        margin-right: 0; }
+  footer p.footer_warning {
+    font-size: 12px;
+    margin-bottom: 30px; }
+    footer p.footer_warning span {
+      color: #e40003;
+      font-size: 16px; }
+  footer p.copyright {
+    font-size: 12px;
+    margin-bottom: 15px; }
+  footer .credit_cards {
+    margin-bottom: 15px; }
+    footer .credit_cards p {
+      text-transform: uppercase;
+      margin-right: 10px; }
+    footer .credit_cards .credit_card {
+      width: 35px;
+      margin-right: 5px; }
+      footer .credit_cards .credit_card:last-child {
+        margin-right: 0; }
