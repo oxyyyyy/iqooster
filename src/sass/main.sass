@@ -105,28 +105,39 @@ header
 		@media (max-width: $sm_screen)
 			margin-right: 10px
 			z-index: 5
+			width: 60px
 	.header_two_bottles
 		margin-top: 15px
 		margin-left: -130px
 		@media (max-width: $sm_screen)
-			margin-left: 0
-			max-width: 360px
+			max-width: 300px
 			z-index: 2
 	.header_verified
 		position: absolute
 		top: 295px
 		left: 250px
 		@media (max-width: $sm_screen)
-			top: 35px
-			left: 320px
+			position: static
+			width: 80px
+	.bottles_and_medals_and_blue_man_with_brain
+		position: relative
 	.header_blue_man_with_brain
 		margin-left: -55px
 		margin-top: -42px
+		@media (max-width: $md_screen)
+			position: absolute
+			left: 230px
 		@media (max-width: $sm_screen)
-			margin-left: -155px
+			width: 280px
+			left: 140px
+			top: 20px
 	ul.header_list
 		max-width: 360px
 		z-index: 5
+		@media (max-width: $md_screen)
+			margin-left: 120px
+		@media (max-width: $sm_screen)
+			margin: 0
 		li
 			color: #ffffff
 			font-weight: 700

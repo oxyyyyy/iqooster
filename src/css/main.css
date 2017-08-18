@@ -9,6 +9,9 @@
   width: 156px;
   height: 62px;
   left: 0; }
+  @media (max-width: 767px) {
+    .safebuy_label {
+      display: none; } }
 
 .doctor_label {
   background: url("../img/labels/doctor.png");
@@ -332,14 +335,14 @@ header {
     @media (max-width: 991px) {
       header .header_medal {
         margin-right: 10px;
-        z-index: 5; } }
+        z-index: 5;
+        width: 60px; } }
   header .header_two_bottles {
     margin-top: 15px;
     margin-left: -130px; }
     @media (max-width: 991px) {
       header .header_two_bottles {
-        margin-left: 0;
-        max-width: 360px;
+        max-width: 300px;
         z-index: 2; } }
   header .header_verified {
     position: absolute;
@@ -347,17 +350,31 @@ header {
     left: 250px; }
     @media (max-width: 991px) {
       header .header_verified {
-        top: 35px;
-        left: 320px; } }
+        position: static;
+        width: 80px; } }
+  header .bottles_and_medals_and_blue_man_with_brain {
+    position: relative; }
   header .header_blue_man_with_brain {
     margin-left: -55px;
     margin-top: -42px; }
+    @media (max-width: 1199px) {
+      header .header_blue_man_with_brain {
+        position: absolute;
+        left: 230px; } }
     @media (max-width: 991px) {
       header .header_blue_man_with_brain {
-        margin-left: -155px; } }
+        width: 280px;
+        left: 140px;
+        top: 20px; } }
   header ul.header_list {
     max-width: 360px;
     z-index: 5; }
+    @media (max-width: 1199px) {
+      header ul.header_list {
+        margin-left: 120px; } }
+    @media (max-width: 991px) {
+      header ul.header_list {
+        margin: 0; } }
     header ul.header_list li {
       color: #ffffff;
       font-weight: 700;
