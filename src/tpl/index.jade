@@ -63,15 +63,15 @@ html(lang='#{current_lang}')
 				.container
 					.d-flex.justify-content-center
 						h2.stripe Unique benefits of XXX
-					.benefits_bullets_container
-						p.benefits_bullet Increases mental capacity 3-4 times
-						p.benefits_bullet Facilitates the rapid assimilation of information
-						p.benefits_bullet Protects brain cells from premature destruction
-						p.benefits_bullet Normalizes sleep and vision
-						p.benefits_bullet Accelerates the decision-making process
-						p.benefits_bullet Gives energy and self-confidence
-						p.benefits_bullet Increases mental efficiency
-						p.benefits_bullet Improves the power of the intellect, memory and concentration
+					ul.benefits_bullets_container
+						li.benefits_bullet Increases mental capacity 3-4 times
+						li.benefits_bullet Facilitates the rapid assimilation of information
+						li.benefits_bullet Protects brain cells from premature destruction
+						li.benefits_bullet Normalizes sleep and vision
+						li.benefits_bullet Accelerates the decision-making process
+						li.benefits_bullet Gives energy and self-confidence
+						li.benefits_bullet Increases mental efficiency
+						li.benefits_bullet Improves the power of the intellect, memory and concentration
 					p.bold According to medical research, the process of deteriorating brain ability begins with 25 years. For a period of up to 50 years, the brain potential reduced to 60% of the original. That is why XXX is recommended for all people without exception.
 					p.default With this remedy, you will achieve more!
 					include include/trigger_section
@@ -80,17 +80,17 @@ html(lang='#{current_lang}')
 				.container
 					.d-flex.justify-content-center
 						h2.stripe ХХХ is easy to take
-					.course_steps_container.d-flex.justify-content-between.align-items-start
-						.course_steps_step
+					ul.course_steps_container.d-flex.justify-content-between.align-items-start
+						li.course_steps_step
 							img(src='img/icons/sections/course/step_img_1.png', alt='', class='course_steps_step_img rounded-circle')
 							p.course_steps_step_text Take 1 capsule 2 times a day – in the morning and in the evening
-						.course_steps_step
+						li.course_steps_step
 							img(src='img/icons/sections/course/step_img_2.png', alt='', class='course_steps_step_img rounded-circle')
 							p.course_steps_step_text Drink plenty of water
-						.course_steps_step
+						li.course_steps_step
 							img(src='img/icons/sections/course/step_img_3.png', alt='', class='course_steps_step_img rounded-circle')
 							p.course_steps_step_text Take daily course
-						.course_steps_step
+						li.course_steps_step
 							img(src='img/icons/sections/course/step_img_4.png', alt='', class='course_steps_step_img rounded-circle')
 							p.course_steps_step_text Minimum course is 2 weeks
 					p.papper_text.bold XXX works already in 10 minutes after taking, pure evident. With each passing day, the effect accumulates more and more. At the end of the course, you will notice how your brain works 2-3 times more efficiently than before, and less tired.
@@ -184,7 +184,32 @@ html(lang='#{current_lang}')
 						.col-lg-4
 							<iframe width="100%" height="188" src="https://www.youtube.com/embed/OIfLyMSuAMA" frameborder="0" allowfullscreen></iframe>
 
-
+			section.conclusion
+				.container
+					.d-flex.justify-content-center
+						h2.stripe More reasons to go for it with XXX
+					p.black ХХХ will reveal the potential of your brain by 200-300%!<br>Find out what you are capable of!
+					.conclusion_main_container.d-flex.flex-wrap.justify-content-center.justify-content-lg-between.align-items-start
+						img(src='img/brain_with_icons.png', alt='', class='brain_with_icons')
+						.conclusion_medals_and_bottles_container.d-flex.flex-column.justify-content-center.align-items-center
+							.conclusion_medals_container.d-flex.justify-content-center.align-items-center
+								img(src='img/medals/2.png', alt='', class='conclusion_medal')
+								img(src='img/medals/1.png', alt='', class='conclusion_medal')
+								img(src='img/medals/3.png', alt='', class='conclusion_medal')
+								img(src='img/labels/verified.png', alt='', class='conclusion_medal')
+							.conclusion_three_bottles_and_logo_container.d-flex.justify-content-center.align-items-center
+								p.logo.d-flex.align-items-center XXX
+								img(src='img/three_bottles_large.png', alt='', class='conclusion_three_bottles')
+						ul.conslusion_list
+							li.bold Full natural consist
+							li.bold Normalizes brain functioning and increases its capacity 
+							li.bold Contains many vitamins and microelements useful for the body
+							li.bold A certified product that passed all the necessary clinical tests
+							li.bold Effective protection of the brain
+						.consludion_logo_and_text.logo_and_text.d-flex
+							p.logo.d-flex.align-items-center XXX
+							p.text.d-flex.align-items-center Over a million customers worldwide already goes with XXX. Now it’s your turn to try it!
+					include include/trigger_simple
 
 
 			//- include include/footer

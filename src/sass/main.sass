@@ -29,6 +29,9 @@ section, header
 	background-position: center !important
 section
 	padding-top: 55px
+ul
+	li
+		list-style: none !important
 
 p
 	margin: 0
@@ -42,10 +45,46 @@ ul
 	font-style: italic
 .blue
 	color: #073982
+.logo_and_text
+	background-color: #ffffff
+	border-radius: 10px
+	margin-bottom: 15px
+	p.text
+		text-transform: uppercase
+		color: #073982
+		font-size: 26px
+		font-weight: 700
+		padding: 10px 25px
+		@media (max-width: $sm_screen)
+			font-size: 12px
+p.logo
+	padding: 0 25px 0 20px
+	border-radius: 10px
+	color: #ffffff
+	font-size: 72px
+	font-weight: 900
+	font-style: italic
+	background-color: #e50003
+	box-shadow: 3.5px 6.062px 32px 0px rgba(0, 0, 0, 0.25)
+	position: relative
+	@media (max-width: $sm_screen)
+		font-size: 36px
+	&:after
+		content: ''
+		width: 15px
+		height: 25px
+		background-color: #e50003
+		position: absolute
+		right: -7px
+		top: 25px
+		transform: skewX(-30deg)
+		@media (max-width: $sm_screen)
+			top: 10px
+
 
 // Sections
 header
-	background: url('../img/backgrounds/header_bg.png')
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.2) 100%), url('../img/backgrounds/header_bg.png')
 	padding-bottom: 15px
 	padding-top: 35px
 	p.under_stripe
@@ -57,39 +96,6 @@ header
 		margin-bottom: 12px
 		@media (max-width: $sm_screen)
 			font-size: 18px
-	.logo_and_text
-		background-color: #ffffff
-		border-radius: 10px
-		margin-bottom: 15px
-		p.logo
-			padding: 0 25px 0 20px
-			border-radius: 10px
-			color: #ffffff
-			font-size: 72px
-			font-weight: 900
-			font-style: italic
-			background-color: #e50003
-			box-shadow: 3.5px 6.062px 32px 0px rgba(0, 0, 0, 0.25)
-			position: relative
-			@media (max-width: $sm_screen)
-				font-size: 36px
-			&:after
-				content: ''
-				width: 15px
-				height: 25px
-				background-color: #e50003
-				position: absolute
-				right: -7px
-				top: 25px
-				transform: skewX(-30deg)
-		p.text
-			text-transform: uppercase
-			color: #073982
-			font-size: 26px
-			font-weight: 700
-			padding: 10px 25px
-			@media (max-width: $sm_screen)
-				font-size: 12px
 	.bottles_and_medals
 		position: relative
 		z-index: 5
@@ -305,7 +311,7 @@ section.benefits
 			position: absolute
 			left: 259px
 			top: 55px
-		p.benefits_bullet
+		li.benefits_bullet
 			display: inline-block
 			color: #ffffff
 			max-width: 225px
@@ -704,3 +710,113 @@ section.stories
 				content: none
 		iframe
 			margin: 25px 0 17px 0
+
+section.conclusion
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.2) 100%), url('../img/backgrounds/conclusion_bg.png')
+	padding-bottom: 45px
+	color: #ffffff
+	@media (max-width: $sm_screen)
+		padding-bottom: 150px
+	h2.stripe
+		margin-bottom: 35px
+	p.black
+		text-align: center
+		text-transform: uppercase
+		font-size: 26px
+		line-height: 35px
+		@media (max-width: $xs_screen)
+			font-size: 18px
+	.conclusion_main_container
+		position: relative
+	.brain_with_icons
+		@media (max-width: $md_screen)
+			width: 365px
+			margin-left: -70px
+		@media (max-width: $sm_screen)
+			margin: 0
+		@media (max-width: $xs_screen)
+			width: 100%
+			max-width: 365px
+	.conclusion_medals_and_bottles_container
+		margin-top: 55px
+		margin-left: -100px
+		@media (max-width: $sm_screen)
+			margin: 0
+			position: absolute
+			bottom: -230px
+		.conclusion_medals_container
+			margin-bottom: 42px
+			position: relative
+			@media (max-width: $sm_screen)
+				margin-bottom: 20px
+			.conclusion_medal
+				@media (max-width: $sm_screen)
+					margin: 0 10px
+					width: 80px
+				@media (max-width: $xs_screen)
+					width: 60px
+				&:nth-child(2)
+					margin-top: -75px
+					@media (max-width: $sm_screen)
+						margin-top: 0
+				&:nth-child(4)
+					position: absolute
+					bottom: -260px
+					right: -57px
+					@media (max-width: $md_screen)
+						right: -40px
+					@media (max-width: $sm_screen)
+						position: static
+		.conclusion_three_bottles_and_logo_container
+			p.logo
+				display: none !important
+				padding: 25px 10px 25px 7px
+				@media (max-width: $sm_screen)
+					display: flex !important
+			.conclusion_three_bottles
+				@media (max-width: $sm_screen)
+					width: 250px
+				@media (max-width: $xs_screen)
+					width: 200px
+	ul.conslusion_list
+		max-width: 275px
+		padding: 0
+		margin-right: 12px
+		margin-top: 68px
+		@media (max-width: $md_screen)
+			max-width: 240px
+		@media (max-width: $sm_screen)
+			margin: 0
+			margin-top: 50px
+			max-width: 330px
+		@media (max-width: $xs_screen)
+			padding-left: 50px
+		li
+			font-size: 16px
+			margin-bottom: 26px
+			display: flex
+			align-items: center
+			position: relative
+			&:before
+				content: $double_check_mark
+				width: 44px
+				height: 44px
+				background-image: linear-gradient( 90deg, rgb(191,0,36) 0%, rgb(229,0,3) 100%)
+				box-shadow: 1px 1.732px 3px 0px rgba(0, 0, 0, 0.5)
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				left: -60px
+	.logo_and_text
+		background-color: transparent
+		margin-top: 20px
+		@media (max-width: $sm_screen)
+			display: none !important
+		p.text
+			color: #ffffff
+	.trigger_simple
+		margin-top: 20px
+		@media (max-width: $sm_screen)
+			margin-top: 250px
