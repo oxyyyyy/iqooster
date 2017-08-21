@@ -357,8 +357,15 @@ section.benefits
 			@media (max-width: $sm_screen)
 				position: static
 				max-width: none
-				padding: 0
+				padding: 0 !important
 				text-align: center !important
+				&:after
+					content: none !important
+					// position: relative !important
+					// top: 0 !important
+					// bottom: 0 !important
+					// left: 0 !important
+					// right: 0 !important
 			&:nth-child(1), &:nth-child(6), &:nth-child(7), &:nth-child(8)
 				text-align: right
 			&:nth-child(1)

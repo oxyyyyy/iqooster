@@ -604,8 +604,10 @@ section.benefits {
         section.benefits .benefits_bullets_container li.benefits_bullet {
           position: static;
           max-width: none;
-          padding: 0;
-          text-align: center !important; } }
+          padding: 0 !important;
+          text-align: center !important; }
+          section.benefits .benefits_bullets_container li.benefits_bullet:after {
+            content: none !important; } }
       section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(1), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(6), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(7), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(8) {
         text-align: right; }
       section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(1) {
