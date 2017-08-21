@@ -989,6 +989,9 @@ section.stories {
           content: none; } }
     section.stories .stories_videos_container iframe {
       margin: 25px 0 17px 0; }
+    section.stories .stories_videos_container video {
+      width: 100%;
+      margin: 25px 0 17px 0; }
 
 section.conclusion {
   background: linear-gradient(to bottom, transparent 0%, transparent 80%, rgba(0, 0, 0, 0.2) 100%), url("../img/backgrounds/conclusion_bg.png");
