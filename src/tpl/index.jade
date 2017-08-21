@@ -63,15 +63,18 @@ html(lang='#{current_lang}')
 				.container
 					.d-flex.justify-content-center
 						h2.stripe Unique benefits of XXX
-					ul.benefits_bullets_container
-						li.benefits_bullet Increases mental capacity 3-4 times
-						li.benefits_bullet Facilitates the rapid assimilation of information
-						li.benefits_bullet Protects brain cells from premature destruction
-						li.benefits_bullet Normalizes sleep and vision
-						li.benefits_bullet Accelerates the decision-making process
-						li.benefits_bullet Gives energy and self-confidence
-						li.benefits_bullet Increases mental efficiency
-						li.benefits_bullet Improves the power of the intellect, memory and concentration
+					#benefits_carousel.glide
+						.glide__wrapper
+							ul.benefits_bullets_container.glide__track
+								li.benefits_bullet.glide__slide Increases mental capacity 3-4 times
+								li.benefits_bullet.glide__slide Facilitates the rapid assimilation of information
+								li.benefits_bullet.glide__slide Protects brain cells from premature destruction
+								li.benefits_bullet.glide__slide Normalizes sleep and vision
+								li.benefits_bullet.glide__slide Accelerates the decision-making process
+								li.benefits_bullet.glide__slide Gives energy and self-confidence
+								li.benefits_bullet.glide__slide Increases mental efficiency
+								li.benefits_bullet.glide__slide Improves the power of the intellect, memory and concentration
+						.glide__bullets
 					p.bold According to medical research, the process of deteriorating brain ability begins with 25 years. For a period of up to 50 years, the brain potential reduced to 60% of the original. That is why XXX is recommended for all people without exception.
 					p.default With this remedy, you will achieve more!
 					include include/trigger_section

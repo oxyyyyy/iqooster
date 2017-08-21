@@ -558,6 +558,21 @@ section.benefits {
   color: #ffffff; }
   section.benefits h2.stripe {
     margin-bottom: 30px; }
+  section.benefits .container {
+    position: relative; }
+  @media (max-width: 991px) {
+    section.benefits #benefits_carousel {
+      margin-top: 300px; }
+      section.benefits #benefits_carousel:before {
+        content: url("../img/dashed_circle_and_brain.png");
+        position: absolute;
+        top: -300px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 296px; } }
+  section.benefits .glide__bullets {
+    bottom: -22px !important; }
   section.benefits .benefits_bullets_container {
     background: url("../img/dashed_circe_and_lines.png");
     background-repeat: no-repeat;
@@ -566,6 +581,10 @@ section.benefits {
     height: 450px;
     margin: auto;
     position: relative; }
+    @media (max-width: 991px) {
+      section.benefits .benefits_bullets_container {
+        background: none;
+        height: auto; } }
     section.benefits .benefits_bullets_container:before {
       content: url("../img/brain.png");
       width: 410px;
@@ -573,11 +592,20 @@ section.benefits {
       position: absolute;
       left: 259px;
       top: 55px; }
+      @media (max-width: 991px) {
+        section.benefits .benefits_bullets_container:before {
+          content: none; } }
     section.benefits .benefits_bullets_container li.benefits_bullet {
       display: inline-block;
       color: #ffffff;
       max-width: 225px;
       position: absolute; }
+      @media (max-width: 991px) {
+        section.benefits .benefits_bullets_container li.benefits_bullet {
+          position: static;
+          max-width: none;
+          padding: 0;
+          text-align: center !important; } }
       section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(1), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(6), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(7), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(8) {
         text-align: right; }
       section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(1) {
@@ -652,7 +680,8 @@ section.benefits {
           right: 0; }
       section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(8) {
         left: -38px;
-        top: 80px; }
+        top: 80px;
+        padding-left: 30px; }
         section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(8):after {
           content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAADj0lEQVRYhcXYW4jUZRjH8c9Mo9nBFsSUja4MgpKITnaANjE6Eel2gsIuyhDKsnMEGXSTZAUWFRp2gIgOGh3oonArS0mKTqaRVxXUTStBu1vW4oa7XTwz+M5/5z/zn2129wfLzjzv6ft//8/7PM87pdF9S02z5qAHZ+NMnILfK9MEcyKuxpU4HYdl2stTCTYLN2AFzm3Rd/dUgB2DO3E75hUc8+1kglWwCg8LP2pHOyYLbBGew2kTGHsQOzsNdgSewK0oJ/YxvIePxau9FqfmzLEHgxMBW4BuHI2/8SP6cRLexMJM/1Fcjy2JbR02YmWD+d+HUoE4VsYS3IwLcWzSNlJddASvit3I6jUsb2A/XDzU8Rn7Quwtj+9fpx58jQ9xXQbqT1yG+Xg3Bwo+yLEfwEcZ2zfYS70fpDoSG/Cpxg48gIuFk28wPkCmauYu2fVfyWuoaatw4FKDtv1ip3rwaJNFa+rNsc/CRZl5X24Fdh82C99J9S+WiXz2WAEo1f73ZGwz8Lw4RDW9iMHal1bOP0+kkJXiNK4WPrBV81fUSJ+LcDFXuMGCpG0YJ+C3omA1lcUuDYrDMLdNqFZ6HA+khqJPPYofsH0SoPqxNmtsFS5SPYjzOoZzSHeL0FOnomAnY01HcULv4I1GDUXBejGzYzihn8XBaqiiYC8JH+uUhnGNJDxkVRSsH+eLTNAJ3YZdzTq04/wDuBSv/x8iUVkMiBybq3bAiMS7HM9OEOppkbg3iwtJroqAdeNGkdfKouhbrUHsaaGnxAl8SxykvGoEzQNsSVwi1opqg/CxXgzhIczGHS2AxkQM3C5KoK6q/UCzQXk7NlvEmCcTKFiMvmTyu0SBmKf94vTtFjVdV9L2S7tgXdXFl+WMWSSevCJ2YwW2Nej3Fc7CcaLePyppG8JP7YDNxNs4p9kgcWG9oPp5BFfh++T7GpG+5uMZ412mT+TfXGUHrBf1fRGlx30Il+AW4dx7qvadopTprh/qhVaTp2XPEnGUG1WtWQ2JeuqPAn0fUZ9nv8MZWuxYOfm/viAU3F8QCjYlEGPipDeFSsGukH8BzWqLAq8i0a8O3ZQ2YUeRQTUfW1Vwkc9wk3jydrSuuta9RQeURvctnSOS9IwWfftETPqrTagJqSwuBs2gDoonvnyqoIjtXdyk/QvhrF9OCU2iivg9ItWw+GFjo7huTYsqItrvwifVv234Z7qAavoPm8+2ApJhJUsAAAAASUVORK5CYII=");
           width: 38px;
@@ -722,6 +751,9 @@ section.course {
         padding: 35px 25px 60px 105px;
         max-width: 416px;
         margin: 25px auto 0 auto; } }
+    @media (max-width: 375px) {
+      section.course p.papper_text {
+        margin-left: -100px; } }
 
 section.why {
   background: url("../img/backgrounds/why_bg.png"); }
@@ -745,7 +777,7 @@ section.why {
           transform: rotate(90deg) scale(0.5); } }
       @media (max-width: 767px) {
         section.why .why_texts_container:before {
-          top: 160px; } }
+          content: none; } }
     section.why .why_texts_container .why_left_text, section.why .why_texts_container .why_right_text {
       max-width: 365px;
       text-align: justify; }
@@ -772,7 +804,7 @@ section.why {
           background: url("../img/icons/sections/why/paper_and_clip_small.png") no-repeat;
           width: 312px;
           padding: 30px;
-          padding-top: 55px;
+          padding-top: 125px;
           padding-bottom: 95px;
           font-size: 18px;
           margin-bottom: 40px; } }

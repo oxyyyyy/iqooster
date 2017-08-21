@@ -13,8 +13,16 @@ $(document).ready(function () {
 			$("#course_carousel").glide({
 				type: "carousel"
 			});
+			$("#benefits_carousel").glide({
+				type: "carousel"
+			});
+			// $("#consist_carousel").glide({
+			// 	type: "carousel"
+			// });
 		} else {
 			$("#course_carousel").glide().data('glide_api').destroy();
+			$("#benefits_carousel").glide().data('glide_api').destroy();
+			// $("#consist_carousel").glide().data('glide_api').destroy();
 		}
 	}
 
