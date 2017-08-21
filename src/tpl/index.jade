@@ -80,19 +80,22 @@ html(lang='#{current_lang}')
 				.container
 					.d-flex.justify-content-center
 						h2.stripe ХХХ is easy to take
-					ul.course_steps_container.d-flex.justify-content-between.align-items-start
-						li.course_steps_step
-							img(src='img/icons/sections/course/step_img_1.png', alt='', class='course_steps_step_img rounded-circle')
-							p.course_steps_step_text Take 1 capsule 2 times a day – in the morning and in the evening
-						li.course_steps_step
-							img(src='img/icons/sections/course/step_img_2.png', alt='', class='course_steps_step_img rounded-circle')
-							p.course_steps_step_text Drink plenty of water
-						li.course_steps_step
-							img(src='img/icons/sections/course/step_img_3.png', alt='', class='course_steps_step_img rounded-circle')
-							p.course_steps_step_text Take daily course
-						li.course_steps_step
-							img(src='img/icons/sections/course/step_img_4.png', alt='', class='course_steps_step_img rounded-circle')
-							p.course_steps_step_text Minimum course is 2 weeks
+					#course_carousel.glide
+						.glide__wrapper
+							ul.course_steps_container.glide__track.d-flex.justify-content-between.align-items-start
+								li.course_steps_step.glide__slide
+									img(src='img/icons/sections/course/step_img_1.png', alt='', class='course_steps_step_img rounded-circle')
+									p.course_steps_step_text Take 1 capsule 2 times a day – in the morning and in the evening
+								li.course_steps_step.glide__slide
+									img(src='img/icons/sections/course/step_img_2.png', alt='', class='course_steps_step_img rounded-circle')
+									p.course_steps_step_text Drink plenty of water
+								li.course_steps_step.glide__slide
+									img(src='img/icons/sections/course/step_img_3.png', alt='', class='course_steps_step_img rounded-circle')
+									p.course_steps_step_text Take daily course
+								li.course_steps_step.glide__slide
+									img(src='img/icons/sections/course/step_img_4.png', alt='', class='course_steps_step_img rounded-circle')
+									p.course_steps_step_text Minimum course is 2 weeks
+						.glide__bullets
 					p.papper_text.bold XXX works already in 10 minutes after taking, pure evident. With each passing day, the effect accumulates more and more. At the end of the course, you will notice how your brain works 2-3 times more efficiently than before, and less tired.
 
 			section.why

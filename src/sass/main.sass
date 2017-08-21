@@ -33,6 +33,12 @@ section
 ul
 	li
 		list-style: none !important
+.glide__bullets
+	bottom: 0 !important
+.glide__bullets>*
+	background-color: #818181
+.glide__bullets>.active
+	background-color: #e50003
 
 p
 	margin: 0
@@ -437,6 +443,8 @@ section.course
 				top: 5px
 				position: absolute
 				border: 1px solid #ffffff
+				@media (max-width: $sm_screen)
+					content: none
 			&:after
 				content: $course_steps_separator
 				width: 76px

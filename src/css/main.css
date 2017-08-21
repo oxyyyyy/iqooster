@@ -255,6 +255,15 @@ section {
 ul li {
   list-style: none !important; }
 
+.glide__bullets {
+  bottom: 0 !important; }
+
+.glide__bullets > * {
+  background-color: #818181; }
+
+.glide__bullets > .active {
+  background-color: #e50003; }
+
 p {
   margin: 0; }
 
@@ -677,6 +686,9 @@ section.course {
       top: 5px;
       position: absolute;
       border: 1px solid #ffffff; }
+      @media (max-width: 991px) {
+        section.course .course_steps_container .course_steps_step:before {
+          content: none; } }
     section.course .course_steps_container .course_steps_step:after {
       content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAAPCAYAAABOWynpAAABkUlEQVRYhc2YQUrDUBCGv9R000KxKyHYhSC4qXUtFrrwDN260VN4AC8hbtzqFQQL9QBqb6AU3FSptJtW4uKN5jVN8ja+jD8MGV7+SWYek5l5CeI4pkxsHl9kLQdAW2QbqAMz4BUYiaw4+nF37tXPPIQqb11FE+gDUWq9DuyJHAI3wHu5rq2jovz+JnDG+malEQmv6d0jBzQzLMBkVt3ypQt0gAYwBZ6AIbAUXh+4JPV5lgnNDGuTZFYVOAF6mCzakGtP1qvCi8RODZobdmDpXaCVw2sBRzl2pSPM6Vp/hoJuZtetfcdjOsC96Ft5JN+xgG6G1Sy94eDa92u5rBIQ4reABgX35iTBTynugJ8pOxe8xVTBBOVLijC29GcH99HS3xxcPMTxK6HWxIzZhF3Rh8AO2YX/BXhI2WWijFg0a9iIJMsWwDUwwEzzX3IdyPpCeGOxU4Pm4BoDt8ApZihdYjrhfQ5/Jny1oRX0j0YT4IrVepaFsfAm3j1y4D8cvieY487P34oI0z3nJJ/g2t8KLXwD+4BNm4Ug17kAAAAASUVORK5CYII=");
       width: 76px;
