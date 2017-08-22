@@ -605,9 +605,11 @@ section.benefits {
           position: static;
           max-width: none;
           padding: 0 !important;
-          text-align: center !important; }
+          text-align: left !important;
+          margin-bottom: 15px; }
           section.benefits .benefits_bullets_container li.benefits_bullet:after {
-            content: none !important; } }
+            position: static !important;
+            margin-right: 10px; } }
       section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(1), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(6), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(7), section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(8) {
         text-align: right; }
       section.benefits .benefits_bullets_container li.benefits_bullet:nth-child(1) {
@@ -753,6 +755,9 @@ section.course {
         padding: 35px 25px 60px 105px;
         max-width: 416px;
         margin: 25px auto 0 auto; } }
+    @media (max-width: 450px) {
+      section.course p.papper_text {
+        margin-left: -50px; } }
     @media (max-width: 375px) {
       section.course p.papper_text {
         margin-left: -100px; } }
@@ -916,8 +921,14 @@ section.consist {
   color: #ffffff; }
   section.consist h2.stripe {
     margin-bottom: 88px; }
+    @media (max-width: 991px) {
+      section.consist h2.stripe {
+        margin-bottom: 30px; } }
   section.consist .consist_bullets {
     position: relative; }
+    @media (max-width: 991px) {
+      section.consist .consist_bullets {
+        display: none !important; } }
     section.consist .consist_bullets:before {
       content: url("../img/bottle.png");
       position: absolute;
@@ -950,6 +961,7 @@ section.consist {
         box-shadow: 3.812px 5.871px 8px 0px rgba(0, 0, 0, 0.25);
         background-color: #ffffff;
         width: 65px;
+        height: 65px;
         position: relative;
         z-index: 5; }
     section.consist .consist_bullets_bullet .consist_bullets_bullet_text {
@@ -987,6 +999,9 @@ section.consist {
   section.consist .consist_bullets_bottom {
     text-align: center;
     margin-top: -73px; }
+    @media (max-width: 991px) {
+      section.consist .consist_bullets_bottom {
+        display: none !important; } }
     section.consist .consist_bullets_bottom .consist_bullets_bullet {
       margin: auto;
       max-width: 650px; }
@@ -1005,10 +1020,45 @@ section.consist {
       section.consist .consist_bullets_bottom .consist_bullets_bullet .consist_bullets_bullet_text {
         margin: 0;
         margin-top: 15px; }
+  @media (min-width: 991px) {
+    section.consist #consist_carousel {
+      display: none; } }
+  section.consist #consist_carousel .consist_bullets_bullet {
+    max-width: none; }
+  section.consist #consist_carousel .consist_bullets_bullet_title_and_icon {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto; }
+    section.consist #consist_carousel .consist_bullets_bullet_title_and_icon .consist_bullets_bullet_icon {
+      margin: 0;
+      margin-bottom: 20px; }
+    section.consist #consist_carousel .consist_bullets_bullet_title_and_icon .consist_bullets_bullet_title {
+      background: linear-gradient(to right, rgba(254, 233, 78, 0) 0%, #fee94e 20%, #fee94e 80%, rgba(254, 233, 78, 0) 100%);
+      text-align: center;
+      padding: 7px 0;
+      width: 80%; }
+  section.consist #consist_carousel .consist_bullets_bullet_text {
+    text-align: center; }
+  section.consist #consist_carousel .glide__bullets {
+    bottom: 8% !important; }
+  section.consist .bottle_and_label_sm_container {
+    margin-top: 20px; }
+    @media (min-width: 991px) {
+      section.consist .bottle_and_label_sm_container {
+        display: none !important; } }
+    section.consist .bottle_and_label_sm_container .bottle_sm {
+      width: 80%;
+      max-width: 300px; }
+    section.consist .bottle_and_label_sm_container .label_sm {
+      margin-left: -130px; }
   section.consist p.default {
     font-size: 30px;
     margin-top: 15px;
     margin-bottom: 50px; }
+    @media (max-width: 991px) {
+      section.consist p.default {
+        font-size: 24px; } }
 
 section.stories {
   background-color: #e5eaf3;

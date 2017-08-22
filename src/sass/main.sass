@@ -358,14 +358,11 @@ section.benefits
 				position: static
 				max-width: none
 				padding: 0 !important
-				text-align: center !important
+				text-align: left !important
+				margin-bottom: 15px
 				&:after
-					content: none !important
-					// position: relative !important
-					// top: 0 !important
-					// bottom: 0 !important
-					// left: 0 !important
-					// right: 0 !important
+					position: static !important
+					margin-right: 10px
 			&:nth-child(1), &:nth-child(6), &:nth-child(7), &:nth-child(8)
 				text-align: right
 			&:nth-child(1)
@@ -508,6 +505,8 @@ section.course
 			padding: 35px 25px 60px 105px
 			max-width: 416px
 			margin: 25px auto 0 auto
+		@media (max-width: 450px)
+			margin-left: -50px
 		@media (max-width: 375px)
 			margin-left: -100px
 
@@ -653,8 +652,12 @@ section.consist
 	color: #ffffff
 	h2.stripe
 		margin-bottom: 88px
+		@media (max-width: $sm_screen)
+			margin-bottom: 30px
 	.consist_bullets
 		position: relative
+		@media (max-width: $sm_screen)
+			display: none !important
 		&:before
 			content: url('../img/bottle.png')
 			position: absolute
@@ -685,6 +688,7 @@ section.consist
 				box-shadow: 3.812px 5.871px 8px 0px rgba(0, 0, 0, 0.25)
 				background-color: #ffffff
 				width: 65px
+				height: 65px
 				position: relative
 				z-index: 5
 		.consist_bullets_bullet_text
@@ -719,6 +723,8 @@ section.consist
 	.consist_bullets_bottom
 		text-align: center
 		margin-top: -73px
+		@media (max-width: $sm_screen)
+			display: none !important
 		.consist_bullets_bullet
 			margin: auto
 			max-width: 650px
@@ -737,10 +743,43 @@ section.consist
 			.consist_bullets_bullet_text
 				margin: 0
 				margin-top: 15px
+	#consist_carousel
+		@media (min-width: $sm_screen)
+			display: none
+		.consist_bullets_bullet
+			max-width: none
+		.consist_bullets_bullet_title_and_icon 
+			margin: 0
+			padding: 0
+			width: auto
+			height: auto
+			.consist_bullets_bullet_icon
+				margin: 0
+				margin-bottom: 20px
+			.consist_bullets_bullet_title
+				background: linear-gradient(to right, rgba(254,233,78,0) 0%, rgba(254,233,78,1) 20%, rgba(254,233,78,1) 80%, rgba(254,233,78,0) 100%)
+				text-align: center
+				padding: 7px 0
+				width: 80%
+		.consist_bullets_bullet_text
+			text-align: center
+		.glide__bullets
+			bottom: 8% !important
+	.bottle_and_label_sm_container
+		margin-top: 20px
+		@media (min-width: $sm_screen)
+			display: none !important
+		.bottle_sm
+			width: 80%
+			max-width: 300px
+		.label_sm
+			margin-left: -130px
 	p.default
 		font-size: 30px
 		margin-top: 15px
 		margin-bottom: 50px
+		@media (max-width: $sm_screen)
+			font-size: 24px
 
 section.stories
 	background-color: #e5eaf3

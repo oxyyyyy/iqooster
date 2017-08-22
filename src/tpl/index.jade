@@ -66,14 +66,16 @@ html(lang='#{current_lang}')
 					#benefits_carousel.glide
 						.glide__wrapper
 							ul.benefits_bullets_container.glide__track
-								li.benefits_bullet.glide__slide Increases mental capacity 3-4 times
-								li.benefits_bullet.glide__slide Facilitates the rapid assimilation of information
-								li.benefits_bullet.glide__slide Protects brain cells from premature destruction
-								li.benefits_bullet.glide__slide Normalizes sleep and vision
-								li.benefits_bullet.glide__slide Accelerates the decision-making process
-								li.benefits_bullet.glide__slide Gives energy and self-confidence
-								li.benefits_bullet.glide__slide Increases mental efficiency
-								li.benefits_bullet.glide__slide Improves the power of the intellect, memory and concentration
+								.glide__slide
+									li.benefits_bullet.d-lg-inline-block.d-flex.flex-row-reverse.jusify-content-start.align-tems-center Increases mental capacity 3-4 times
+									li.benefits_bullet.d-lg-inline-block.d-flex.flex-row-reverse.jusify-content-start.align-tems-center Facilitates the rapid assimilation of information
+									li.benefits_bullet.d-lg-inline-block.d-flex.flex-row-reverse.jusify-content-start.align-tems-center Protects brain cells from premature destruction
+									li.benefits_bullet.d-lg-inline-block.d-flex.flex-row-reverse.jusify-content-start.align-tems-center Normalizes sleep and vision
+								.glide__slide
+									li.benefits_bullet.d-lg-inline-block.d-flex.flex-row-reverse.jusify-content-start.align-tems-center Accelerates the decision-making process
+									li.benefits_bullet.d-lg-inline-block.d-flex.flex-row-reverse.jusify-content-start.align-tems-center Gives energy and self-confidence
+									li.benefits_bullet.d-lg-inline-block.d-flex.flex-row-reverse.jusify-content-start.align-tems-center Increases mental efficiency
+									li.benefits_bullet.d-lg-inline-block.d-flex.flex-row-reverse.jusify-content-start.align-tems-center Improves the power of the intellect, memory and concentration
 						.glide__bullets
 					p.bold According to medical research, the process of deteriorating brain ability begins with 25 years. For a period of up to 50 years, the brain potential reduced to 60% of the original. That is why XXX is recommended for all people without exception.
 					p.default With this remedy, you will achieve more!
@@ -175,6 +177,48 @@ html(lang='#{current_lang}')
 								h3.consist_bullets_bullet_title.blue.bold Griffonia
 								img(src='img/icons/sections/consist/7.png', alt='', class='consist_bullets_bullet_icon rounded-circle')
 							p.consist_bullets_bullet_text Heals nerve cells, improves metabolism, increases blood supply to the brain.
+					#consist_carousel.glide
+						.glide__wrapper
+							ul.glide__track
+								li.consist_bullets_bullet.glide__slide
+									.consist_bullets_bullet_title_and_icon.d-flex.flex-column.justify-content-center.align-items-center
+										img(src='img/icons/sections/consist/1.png', alt='', class='consist_bullets_bullet_icon rounded-circle')
+										h3.consist_bullets_bullet_title.blue.bold Ginkgo Biloba
+									p.consist_bullets_bullet_text Normalizes blood circulation in the brain, improves memory and attention and enhances mental activity.
+								li.consist_bullets_bullet.glide__slide
+									.consist_bullets_bullet_title_and_icon.d-flex.flex-column.justify-content-center.align-items-center
+										img(src='img/icons/sections/consist/2.png', alt='', class='consist_bullets_bullet_icon rounded-circle')
+										h3.consist_bullets_bullet_title.blue.bold L-glutamine
+									p.consist_bullets_bullet_text Stimulates and regulates the work of the brain, gives energy, protects the brain cells from the effects of unfavorable factors.
+								li.consist_bullets_bullet.glide__slide
+									.consist_bullets_bullet_title_and_icon.d-flex.flex-column.justify-content-center.align-items-center
+										img(src='img/icons/sections/consist/3.png', alt='', class='consist_bullets_bullet_icon rounded-circle')
+										h3.consist_bullets_bullet_title.blue.bold DL-phenylalanine
+									p.consist_bullets_bullet_text Normalizes the work of all parts of the brain, improves brain nutrition, stimulates memory and attention.
+								li.consist_bullets_bullet.glide__slide
+									.consist_bullets_bullet_title_and_icon.d-flex.flex-column.justify-content-center.align-items-center
+										img(src='img/icons/sections/consist/4.png', alt='', class='consist_bullets_bullet_icon rounded-circle')
+										h3.consist_bullets_bullet_title.blue.bold Taurine and caffeine
+									p.consist_bullets_bullet_text Increase concentration, improve memory, normalize metabolism in the brain tissues and increase efficiency.
+								li.consist_bullets_bullet.glide__slide
+									.consist_bullets_bullet_title_and_icon.d-flex.flex-column.justify-content-center.align-items-center
+										img(src='img/icons/sections/consist/5.png', alt='', class='consist_bullets_bullet_icon rounded-circle')
+										h3.consist_bullets_bullet_title.blue.bold Choline bitartrate
+									p.consist_bullets_bullet_text Prevents the reduction of brain activity due to age and wrong lifestyle, prevents the development of dangerous diseases.
+								li.consist_bullets_bullet.glide__slide
+									.consist_bullets_bullet_title_and_icon.d-flex.flex-column.justify-content-center.align-items-center
+										img(src='img/icons/sections/consist/6.png', alt='', class='consist_bullets_bullet_icon rounded-circle')
+										h3.consist_bullets_bullet_title.blue.bold L-tyrosine
+									p.consist_bullets_bullet_text Improves memory and concentration, speeds up the transfer of nerve impulses and increases the speed of assimilation of information.
+								li.consist_bullets_bullet.glide__slide
+									.consist_bullets_bullet_title_and_icon.d-flex.flex-column.justify-content-center.align-items-center
+										img(src='img/icons/sections/consist/7.png', alt='', class='consist_bullets_bullet_icon rounded-circle')
+										h3.consist_bullets_bullet_title.blue.bold Griffonia
+									p.consist_bullets_bullet_text Heals nerve cells, improves metabolism, increases blood supply to the brain.
+						.glide__bullets
+					.bottle_and_label_sm_container.d-flex.justify-content-center.align-items-center
+						img(src='img/bottle.png', alt='', class='bottle_sm')
+						img(src='img/labels/natural.png', alt='', class='label_sm')
 					p.default In addition, XXX includes inositol, acetyl L-carnitine, L-thianin, vitamins B1, B2, B3, B12 and many other substances useful for the brain.
 					include include/trigger_section
 
