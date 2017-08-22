@@ -14,8 +14,7 @@ $(document).ready(function () {
 				type: "carousel"
 			});
 			$("#benefits_carousel").glide({
-				type: "carousel",
-				autoplay: false
+				type: "carousel"
 			});
 			$("#consist_carousel").glide({
 				type: "carousel"

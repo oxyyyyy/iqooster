@@ -98,7 +98,7 @@ gulp.task('minCssLibs', ['concatCssTaskLibs'], function () {
 });
 
 gulp.task('clean', function () {
-	return del.sync(['dist/**/*', '!dist/img/**/*']);
+	return del.sync(['dist/**/*', '!dist/img']);
 });
 // -----------------------------------------------------------------------------------------------------------
 
