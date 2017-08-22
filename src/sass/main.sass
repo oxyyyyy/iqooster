@@ -349,6 +349,12 @@ section.benefits
 			top: 55px
 			@media (max-width: $sm_screen)
 				content: none
+		.glide__slide:nth-child(1)
+			li:nth-child(1)
+				text-align: right
+		.glide__slide:nth-child(2)
+			li:nth-child(2), li:nth-child(3), li:nth-child(4)
+				text-align: right
 		li.benefits_bullet
 			display: inline-block
 			color: #ffffff
@@ -359,13 +365,9 @@ section.benefits
 				max-width: none
 				padding: 0 !important
 				text-align: left !important
-				margin-bottom: 15px
-				&:after
-					position: static !important
-					margin-right: 10px
-			&:nth-child(1), &:nth-child(6), &:nth-child(7), &:nth-child(8)
-				text-align: right
-			&:nth-child(1)
+				margin: 20px 0
+		.glide__slide:nth-child(1), .glide__slide:nth-child(3), .glide__slide:nth-child(5)
+			li:nth-child(1)
 				left: 206px
 				top: 7px
 				&:after
@@ -375,7 +377,8 @@ section.benefits
 					position: absolute
 					top: -4px
 					right: -70px
-			&:nth-child(2)
+		.glide__slide:nth-child(1), .glide__slide:nth-child(3), .glide__slide:nth-child(5)
+			li:nth-child(2)
 				left: 714px
 				top: 62px
 				&:after
@@ -385,7 +388,8 @@ section.benefits
 					position: absolute
 					top: -48px
 					left: 5px
-			&:nth-child(3)
+		.glide__slide:nth-child(1), .glide__slide:nth-child(3), .glide__slide:nth-child(5)
+			li:nth-child(3)
 				left: 687px
 				top: 204px
 				&:after
@@ -395,7 +399,8 @@ section.benefits
 					position: absolute
 					top: -40px
 					left: 0px
-			&:nth-child(4)
+		.glide__slide:nth-child(1), .glide__slide:nth-child(3), .glide__slide:nth-child(5)
+			li:nth-child(4)
 				left: 740px
 				top: 352px
 				&:after
@@ -405,7 +410,8 @@ section.benefits
 					position: absolute
 					top: -50px
 					left: 0
-			&:nth-child(5)
+		.glide__slide:nth-child(2), .glide__slide:nth-child(4), .glide__slide:nth-child(6)
+			li:nth-child(1)
 				left: 495px
 				top: 400px
 				&:after
@@ -415,7 +421,8 @@ section.benefits
 					position: absolute
 					left: -80px
 					bottom: 10px
-			&:nth-child(6)
+		.glide__slide:nth-child(2), .glide__slide:nth-child(4), .glide__slide:nth-child(6)
+			li:nth-child(2)
 				left: -12px
 				top: 377px
 				&:after
@@ -425,7 +432,8 @@ section.benefits
 					position: absolute
 					top: -52px
 					right: 8px
-			&:nth-child(7)
+		.glide__slide:nth-child(2), .glide__slide:nth-child(4), .glide__slide:nth-child(6)
+			li:nth-child(3)
 				left: 22px
 				top: 232px
 				&:after
@@ -435,7 +443,8 @@ section.benefits
 					position: absolute
 					top: -55px
 					right: 0
-			&:nth-child(8)
+		.glide__slide:nth-child(2), .glide__slide:nth-child(4), .glide__slide:nth-child(6)
+			li:nth-child(4)
 				left: -38px
 				top: 80px
 				padding-left: 30px
@@ -446,6 +455,12 @@ section.benefits
 					position: absolute
 					top: -48px
 					right: 0
+		li.benefits_bullet
+			@media (max-width: $sm_screen)
+				&:after
+					position: static !important
+					width: 60px !important
+					margin-top: -12px
 	p.bold
 		margin-top: 63px
 		margin-bottom: 17px
