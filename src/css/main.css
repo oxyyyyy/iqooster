@@ -768,7 +768,7 @@ section.course {
 
 section.why {
   background: url("../img/backgrounds/why_bg.png"); }
-  section.why h2.stripe {
+  section.why h2.stripe, section.why h1.stripe {
     margin-bottom: 60px; }
   section.why .why_texts_container {
     position: relative; }
