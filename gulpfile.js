@@ -148,7 +148,8 @@ gulp.task('build', ['clean', 'scripts', 'minCss', 'minCssLibs'], function () {
 		.pipe(gulp.dest('dist/css'));
 
 	var buildJs = gulp.src([
-		'src/js/common.js'
+		'src/js/common.js',
+		'src/js/bundle.libs.min.js'
 	])
 		.pipe(gulp.dest('dist/js'));
 
