@@ -1,6 +1,9 @@
 .warning {
   background-color: #e6e6e6;
-  padding: 15px 0; }
+  padding: 14px 0; }
+  @media (max-width: 1199px) {
+    .warning {
+      padding: 5px 0; } }
   .warning span {
     color: #e50003;
     font-size: 18px; }

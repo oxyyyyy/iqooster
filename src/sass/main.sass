@@ -62,6 +62,8 @@ ul
 		font-size: 26px
 		font-weight: 700
 		padding: 10px 25px
+		@media (max-width: $md_screen)
+			font-size: 20px
 		@media (max-width: $sm_screen)
 			font-size: 12px
 p.logo
@@ -93,21 +95,31 @@ p.logo
 header
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.2) 100%), url('../img/backgrounds/header_bg.png')
 	padding-bottom: 15px
-	padding-top: 35px
+	padding-top: 24px
 	p.under_stripe
 		text-transform: uppercase
 		text-align: center
 		color: #89daf5
 		font-size: 26px
 		font-weight: 900
-		margin-bottom: 12px
+		margin-bottom: 14px
+		@media (max-width: $md_screen)
+			font-size: 25px
 		@media (max-width: $sm_screen)
 			font-size: 18px
+	.header_main_container
+		@media (min-width: $sm_screen) and (max-width: $md_screen)
+			justify-content: flex-start !important
 	.bottles_and_medals
 		position: relative
 		z-index: 5
+	.header_medals_container
+		@media (max-width: $md_screen)
+			margin-left: -58px
 	.header_medal
 		margin-right: 40px
+		@media (max-width: $md_screen)
+			margin-right: 18px
 		@media (max-width: $sm_screen)
 			margin-right: 10px
 			z-index: 5
@@ -115,13 +127,19 @@ header
 	.header_two_bottles
 		margin-top: 15px
 		margin-left: -130px
+		@media (max-width: $md_screen)
+			margin-left: -80px
 		@media (max-width: $sm_screen)
+			margin-left: -80px
 			max-width: 300px
 			z-index: 2
 	.header_verified
 		position: absolute
 		top: 295px
 		left: 250px
+		@media (max-width: $md_screen)
+			top: 285px
+			left: 264px
 		@media (max-width: $sm_screen)
 			position: static
 			width: 80px
@@ -132,16 +150,16 @@ header
 		margin-top: -42px
 		@media (max-width: $md_screen)
 			position: absolute
-			left: 230px
+			left: 290px
 		@media (max-width: $sm_screen)
 			width: 280px
 			left: 140px
 			top: 20px
 	ul.header_list
-		max-width: 360px
+		max-width: 330px
 		z-index: 5
 		@media (max-width: $md_screen)
-			margin-left: 120px
+			margin-left: 249px
 		@media (max-width: $sm_screen)
 			margin: 0
 		li
@@ -183,7 +201,9 @@ header
 					width: 25px
 					height: 25px
 	.trigger_simple
-		margin-top: -33px
+		margin-top: -15px
+		@media (max-width: $md_screen)
+			margin-top: -14px
 		@media (max-width: $sm_screen)
 			margin-top: 0
 	.header_tv_labels_container
@@ -470,9 +490,8 @@ section.benefits
 
 section.course
 	background-color: #e5eaf3
-	padding-bottom: 10px
 	h2.stripe
-		margin-bottom: 50px
+		margin-bottom: 44px
 	.course_steps_container
 		.course_steps_step
 			position: relative
@@ -510,7 +529,6 @@ section.course
 				box-shadow: 3.812px 5.871px 8px 0px rgba(0, 0, 0, 0.25)
 	p.papper_text
 		background: url('../img/icons/sections/course/papper_large.png') no-repeat
-		margin-top: 25px
 		padding: 38px 65px 60px 105px
 		@media (max-width: $sm_screen)
 			background: url('../img/icons/sections/course/papper_medium.png') no-repeat
@@ -617,6 +635,9 @@ section.doctor
 		@media (max-width: $sm_screen)
 			margin: 0
 			max-width: 100%
+		p:nth-child(3)
+			letter-spacing: -0.4px
+			line-height: 24px
 		&:before
 			content: $open_quote
 			width: 22px
@@ -651,6 +672,8 @@ section.doctor
 		@media (max-width: $sm_screen)
 			margin-top: 0
 		.doctor_photo
+			@media (max-width: $md_screen)
+				margin-top: -50px
 			@media (max-width: $sm_screen)
 				width: 100%
 		.doctor_name
@@ -690,7 +713,7 @@ section.consist
 			margin-right: -80px
 			height: 34px
 			width: 550px
-			padding-right: 110px
+			padding-right: 96px
 			@media (max-width: $md_screen)
 				width: 430px
 			h3.consist_bullets_bullet_title
@@ -725,7 +748,7 @@ section.consist
 			.consist_bullets_bullet_title_and_icon
 				padding: 0
 				margin: 0
-				padding-left: 110px
+				padding-left: 98px
 				margin-left: -192px
 				background: linear-gradient(to left, rgba(254,233,78,0) 0%, rgba(254,233,78,1) 20%, rgba(254,233,78,1) 100%)
 				@media (max-width: $md_screen)
@@ -923,12 +946,12 @@ section.conclusion
 				left: -60px
 	.logo_and_text
 		background-color: transparent
-		margin-top: 20px
+		margin-top: 5px
 		@media (max-width: $sm_screen)
 			display: none !important
 		p.text
 			color: #ffffff
 	.trigger_simple
-		margin-top: 20px
+		margin-top: 12px
 		@media (max-width: $sm_screen)
 			margin-top: 250px

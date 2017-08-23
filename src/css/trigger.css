@@ -45,7 +45,7 @@
       padding: 7px 0;
       border-radius: 0; } }
   .trigger_section .three_bottles {
-    margin-left: 54px; }
+    margin-left: 40px; }
     @media (max-width: 991px) {
       .trigger_section .three_bottles {
         display: none; } }
@@ -67,7 +67,7 @@
       text-align: center; }
       @media (max-width: 1199px) {
         .trigger_section .title_and_label_container .trigger_title {
-          font-size: 24px; } }
+          font-size: 32px; } }
       @media (max-width: 991px) {
         .trigger_section .title_and_label_container .trigger_title {
           background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #e7f8fd 20%, #89daf5 100%);
@@ -97,7 +97,7 @@
         text-align: center; }
         @media (max-width: 1199px) {
           .trigger_section .title_and_label_container .label_overlay .label {
-            letter-spacing: 3px; } }
+            letter-spacing: 4.5px; } }
         @media (max-width: 991px) {
           .trigger_section .title_and_label_container .label_overlay .label {
             letter-spacing: 1.3px; } }
