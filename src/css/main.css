@@ -34,6 +34,18 @@
 .warning_icon {
   margin-right: 18px; }
 
+.stripe_container {
+  position: relative; }
+
+.border_sticks:after {
+  display: block;
+  width: 73px;
+  height: 6px;
+  background-color: blue;
+  border-top: 1px solid #89daf5;
+  border-bottom: 1px solid #89daf5;
+  position: absolute; }
+
 .stripe {
   text-transform: uppercase;
   text-align: center;
